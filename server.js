@@ -13,9 +13,13 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 // app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '/static')));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'webrtcpage.html'));
+});
+app.get('/share', function(req, res) {
+    res.sendFile(path.join(__dirname, 'screen-sharing-min.html'));
 });
 
 app.get('/client.js', function (req, res) {
@@ -63,13 +67,13 @@ io.on('connection', function (socket) {
     });
 
     socket.on('disconnect', function () {
-        console.log('a user disconnected');
+       console.log('a user disconnected');
     });
 });
 
 https.listen(port, function (error) {
     if(!error)
-        console.log('listening on', port);
+        console.log('listening on', port,"\nTap on http://localhost:3000/");
     else 
     console.log("Error occurred.", error);
 });

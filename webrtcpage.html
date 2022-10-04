@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Videocall Application</title>
+    
 </head>
 <body>
     <h1>Videocall Application</h1>
@@ -14,6 +15,11 @@
     <div id="consultingRoom" style="display:none">
         <video id="localVideo" autoplay></video>
         <video id="remoteVideo" autoplay></video>
+        <section>
+            <button><a href="http://127.0.0.1:5500/spark-main/screen-sharing-min.html" target="_blank">
+                SHARE SCREEN</a></button>
+                <iframe id='fp_embed_player' src='https://demo.flashphoner.com:8888/embed_player?urlServer=wss://demo.flashphoner.com&streamName=mystream&mediaProviders=WebRTC,MSE,WSPlayer' marginwidth='0' marginheight='0' frameborder='0' width='100%' height='100%' scrolling='no' allowfullscreen='allowfullscreen' fps="30"></iframe>
+        </section>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

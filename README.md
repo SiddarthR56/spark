@@ -32,8 +32,8 @@ We have the best hands free solution to your presentation needs! Have you ever p
 ## Demo Video 
 
 <h1 align="center"> 
-
-![Spark Demo](https://user-images.githubusercontent.com/99683342/194715093-3fbc1bc9-7690-4edb-b8bb-5594ba029bb7.mp4) 
+<video src='https://user-images.githubusercontent.com/99683342/194715093-3fbc1bc9-7690-4edb-b8bb-5594ba029bb7.mp4' width=180/>
+[Spark Demo](https://user-images.githubusercontent.com/99683342/194715093-3fbc1bc9-7690-4edb-b8bb-5594ba029bb7.mp4) 
 
 <h1>
 
